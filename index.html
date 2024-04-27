@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+
+  <!-- #region bootStrap cdn icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- #endregion bootStrap cdn icon -->
+
+  <link rel="stylesheet" href="./CSS/style.css">
+
+<style>
+      .navbar {
+      border-bottom: 2px solid rgb(204, 204, 204);
+    }
+
+    .breadcrumb a {
+      color: rgb(90, 90, 90);
+    }
+
+    .breadcrumb a:hover {
+      color: black;
+    }
+</style>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0">
+
+    <!-- #region navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png" alt="cama"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="product-list.html">周邊商品</a>
+            </li>
+            <li class="nav-item dropdown ms-5">
+              <a class="nav-link dropdown-toggle text-dark" href="javascript:;" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                sealook探索
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="sealook-list.html">音樂祭</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="fqa.html">常見問題</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+
+          <!-- .d-flex>a.fs-2+a.fs-2.position-relative.me-5>span.fs-6.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger>span.visually-hidden -->
+
+          <div class="d-flex">
+            <a href="javascript:;" class="fs-2 me-3" data-bs-toggle="modal" data-bs-target="#Modal">
+              <i class="bi bi-person-fill text-dark"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample"
+              class="fs-2 position-relative me-5">
+              <i class="bi bi-cart-plus text-dark"></i>
+              <span class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- #endregion navbar -->
+
+    <!-- #region carousel -->
+
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/sealook1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/sealook2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/sealook3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/sealook4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/sealook5.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- #endregion carousel -->
+
+    <!-- #region first -->
+
+    <!-- .container>.row>h2.col-12.text-center{SEALOOK}.mb-5+.col-12.col-md-6.col-xl-3.mb-3*8>div.position-relative>img.w-100.rounded-circle[src="./images/sealook.png"]+div.position-absolute.start-0.top-0.p-2.fs-2{icon}^p{sealook} -->
+
+
+    <div class="container">
+      <div class="row">
+        <h2 class="col-12 text-center mb-5">SEALOOK</h2>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <a class="position-absolute start-0 top-0 p-2 fs-2"
+              href="https://www.youtube.com/embed/E4JdqgVmC4E?si=Q7vqtgiDFXMd-p8S"><i class="bi bi-youtube"></i></a>
+            <div class="position-absolute end-0 top-0 p-2 fs-2"><i class="bi bi-badge-8k"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-emoji-heart-eyes"></i></div>
+            <div class="position-absolute end-0 top-0 p-2 fs-2"><i class="bi bi-emoji-sunglasses"></i></div>
+            <div class="position-absolute start-0 bottom-0 p-2 fs-2"><i class="bi bi-emoji-kiss"></i></div>
+            <div class="position-absolute end-0 bottom-0 p-2 fs-2"><i class="bi bi-emoji-wink"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-calendar-heart"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cart-plus"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cloud-download"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cloud-drizzle"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-clipboard2-heart"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mb-3">
+          <div class="position-relative">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-chat-heart"></i></div>
+          </div>
+          <p>sealook</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion first -->
+
+    <!-- #region second -->
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row pt-3 pb-3">
+          <div class="col-12 text-center">
+            <h2>AAAA1</h2>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5">
+            <div class="bg-info p-2 rounded-circle">
+              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
+              <p class="text-center">Monkey1</p>
+              </img>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5">
+            <div class="bg-info p-2 rounded-circle">
+              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
+              <p class="text-center">Monkey2</p>
+              </img>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5">
+            <div class="bg-info p-2 rounded-circle">
+              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
+              <p class="text-center">Monkey3</p>
+              </img>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 mb-5">
+            <div class="bg-info p-2 rounded-circle">
+              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
+              <p class="text-center">Monkey4</p>
+              </img>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- #endregion second -->
+
+    <!-- #region third -->
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>BBBB1</h2>
+          </div>
+          <div class="col-md-12 col-xl-6 mg-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/E4JdqgVmC4E?si=Q7vqtgiDFXMd-p8S"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="text-center">影片1</p>
+          </div>
+          <div class="col-md-12 col-xl-6 mg-5">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/U1ggPrTaSD4?si=jAIfbPRZ8x62lxwl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="text-center">影片2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion third -->
+
+    <!-- #region fourth -->
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
+                class="w-50 rounded-circle"></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion fourth -->
+
+  </main>
+
+  <!-- #region TOP & 線上購票 -->
+  <a class="position-fixed end-0 bottom-50 bg-secondary text-white fs-3 p-3 text-decoration-none rounded-strat z-index-999"
+    href="javascript:;"><i class="bi bi-ticket-perforated me-3"></i>線上購票</a>
+
+  <a class="position-fixed end-0 bottom-0 bg-dark text-white p-3 m-3 text-decoration-none rounded-circle"
+    href="#">TOP</a>
+  <!-- #endregion TOP & 線上購票 -->
+
+  <!-- #region footer -->
+  <footer class="footer mt-auto bg-light py-3 text-center">
+    此練習檔案不作為商業用途
+  </footer>
+  <!-- #endregion footer -->
+
+  <!-- #region modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title" id="Modal">登入會員</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="dashboard.html" class="needs-validation" novalidate>
+
+            <div class="row mb-3">
+              <div class="col-md-2 col-form-label">
+                <label for="account" class="form-label">帳號</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" id="account" name="account" class="form-control" required placeholder="請輸入帳號">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-2 col-form-label">
+                <label for="password" class="form-label">密碼</label>
+              </div>
+              <div class="col-md-10">
+                <input type="password" id="password" name="password" class="form-control" required
+                  placeholder="請輸入密碼">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="me-3">
+                <input type="checkbox">
+              </div>
+              <div>remember</div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <div>
+                <input class="btn btn-primary" type="submit" value="登入">
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="javascript;:" class="text-decoration-none">
+                  忘記密碼
+                </a>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion modal -->
+
+  <!-- #region offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion offcanvas -->
+
+  <!-- #region bootStrap cdn javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <!-- #endregion bootStrap cdn javaScript -->
+
+</body>
+
+</html>

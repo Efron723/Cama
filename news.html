@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>news</title>
+
+  <!-- #region bootStrap cdn icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- #endregion bootStrap cdn icon -->
+
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <style>
+    .navbar {
+      border-bottom: 2px solid rgb(204, 204, 204);
+    }
+
+    .breadcrumb a {
+      color: rgb(90, 90, 90);
+    }
+
+    .breadcrumb a:hover {
+      color: black;
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0">
+
+    <!-- #region navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png" alt="cama"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="product-list.html">周邊商品</a>
+            </li>
+            <li class="nav-item dropdown ms-5">
+              <a class="nav-link dropdown-toggle text-dark" href="javascript:;" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                sealook探索
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="sealook-list.html">音樂祭</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="fqa.html">常見問題</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+
+          <!-- .d-flex>a.fs-2+a.fs-2.position-relative.me-5>span.fs-6.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger>span.visually-hidden -->
+
+          <div class="d-flex">
+            <a href="javascript:;" class="fs-2 me-3" data-bs-toggle="modal" data-bs-target="#Modal">
+              <i class="bi bi-person-fill text-dark"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample"
+              class="fs-2 position-relative me-5">
+              <i class="bi bi-cart-plus text-dark"></i>
+              <span class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- #endregion navbar -->
+
+    <!-- #region breadcrumb -->
+
+    <div class="bg-secondary px-5 py-1 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mt-3">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">線上購物</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">淺焙</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">耶加雪菲咖啡豆 Yirgacheffe</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion breadcrumb -->
+
+    <!-- #region content -->
+
+    <div class="container">
+      <div class="row">
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱1</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱2</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱3</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱4</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱5</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱6</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱7</p>
+          </a>
+        </div>
+        <div class="mb-2 mb-md-5 col-12 col-md-6 col-lg-3">
+          <a href="">
+            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
+            <p class="text-center">商品名稱8</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion content -->
+  </main>
+
+  <!-- #region TOP & 線上購票 -->
+  <a class="position-fixed end-0 bottom-50 bg-secondary text-white fs-3 p-3 text-decoration-none rounded-strat z-index-999"
+    href="javascript:;"><i class="bi bi-ticket-perforated me-3"></i>線上購票</a>
+
+  <a class="position-fixed end-0 bottom-0 bg-dark text-white p-3 m-3 text-decoration-none rounded-circle"
+    href="#">TOP</a>
+  <!-- #endregion TOP & 線上購票 -->
+
+  <!-- #region footer -->
+  <footer class="footer mt-auto bg-light py-3 text-center">
+    此練習檔案不作為商業用途
+  </footer>
+  <!-- #endregion footer -->
+
+  <!-- #region modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title" id="Modal">登入會員</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="dashboard.html" class="needs-validation" novalidate>
+
+            <div class="row mb-3">
+              <div class="col-md-2 col-form-label">
+                <label for="account" class="form-label">帳號</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" id="account" name="account" class="form-control" required placeholder="請輸入帳號">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-2 col-form-label">
+                <label for="password" class="form-label">密碼</label>
+              </div>
+              <div class="col-md-10">
+                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mb-3">
+              <div class="me-3">
+                <input type="checkbox">
+              </div>
+              <div>remember</div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <div>
+                <input class="btn btn-primary" type="submit" value="登入">
+              </div>
+              <div class="d-flex align-items-center">
+                <a href="javascript;:" class="text-decoration-none">
+                  忘記密碼
+                </a>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion modal -->
+
+  <!-- #region offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion offcanvas -->
+
+  <!-- #region bootStrap cdn javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <!-- #endregion bootStrap cdn javaScript -->
+
+</body>
+
+</html>

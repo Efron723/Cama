@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="h-100">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>product</title>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- #region bootStrap cdn icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- #endregion bootStrap cdn icon -->
+
+  <style>
+    .navbar {
+      border-bottom: 2px solid rgb(204, 204, 204);
+    }
+
+    .breadcrumb a {
+      color: rgb(90, 90, 90);
+    }
+
+    .breadcrumb a:hover {
+      color: black;
+    }
+
+    .orange li::marker {
+      color: orange;
+    }
+
+    .weight {
+      text-align: center;
+      line-height: 35px;
+      width: 65px;
+      height: 35px;
+      border: 1px solid orange;
+      color: orange;
+      cursor: pointer;
+    }
+
+    del {
+      color: rgb(153, 153, 153);
+    }
+
+    .overflow {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0">
+
+    <!-- #region navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png"
+            alt="cama"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="product-list.html">周邊商品</a>
+            </li>
+            <li class="nav-item dropdown ms-5">
+              <a class="nav-link dropdown-toggle text-dark" href="javascript:;" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                sealook探索
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="sealook-list.html">音樂祭</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="fqa.html">常見問題</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link text-dark" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+
+          <!-- .d-flex>a.fs-2+a.fs-2.position-relative.me-5>span.fs-6.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger>span.visually-hidden -->
+
+          <div class="d-flex">
+            <a href="javascript:;" class="fs-2 me-3" data-bs-toggle="modal" data-bs-target="#Modal">
+              <i class="bi bi-person-fill text-dark"></i>
+            </a>
+            <a data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvasExample"
+              class="fs-2 position-relative me-5">
+              <i class="bi bi-cart-plus text-dark"></i>
+              <span class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- #endregion navbar -->
+
+    <!-- #region breadcrumb -->
+
+    <div class="bg-secondary px-5 py-1 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xl-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mt-3">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">線上購物</a></li>
+                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">淺焙</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">耶加雪菲咖啡豆 Yirgacheffe</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #endregion breadcrumb -->
+
+
+    <!-- #region top -->
+
+    <div class="container">
+
+      <!-- #region title -->
+
+      <div class="row mb-5">
+
+        <h4>耶加雪菲咖啡豆 Yirgacheffe</h4>
+
+      </div>
+
+      <!-- #endregion title -->
+
+      <div class="row mb-5">
+
+        <!-- #region card -->
+
+        <div class="col-md-5 col-xl-4 card border-white mb-3">
+
+          <img src="./images/cama1_product.jpeg" class="card-img-top" alt="耶加雪菲咖啡豆 Yirgacheffe">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+
+        </div>
+
+        <!-- #endregion card -->
+
+        <!-- #region product_content -->
+
+        <div class="col-md-7 col-xl-8">
+
+          <!-- #region ul -->
+
+          <ul class="orange mb-5">
+            <li class="mb-4">豐富熱帶水果氣息、藍莓、黑醋栗酸甜、杏仁奶質的喉韻</li>
+            <li class="mb-4">產地：衣索比亞、瓜地馬拉</li>
+            <li class="mb-4">主要處理法：日曬</li>
+            <li class="mb-4">烘焙度：淺焙</li>
+            <li class="mb-4">榮獲2015美國Coffee Review 92分高分</li>
+            <li>Pomona是羅馬神話中，為美好滋味守護果樹耕種的果樹女神</li>
+          </ul>
+
+          <!-- #endregion ul -->
+
+          <!-- #region weight -->
+
+          <div class="mb-5 d-flex align-items-center">
+            <div class="me-5">
+              規格
+            </div>
+            <div class="weight">
+              227g
+            </div>
+          </div>
+
+          <!-- #endregion weight -->
+
+          <!-- #region coupon -->
+
+          <div class="mb-5 d-flex align-items-end">
+            <div class="fs-4">
+              優惠&nbsp;&nbsp;390&nbsp;&nbsp;
+            </div>
+            <del>390</del>
+          </div>
+
+          <!-- #endregion coupon -->
+
+          <!-- #region select & button -->
+
+          <div class="row">
+
+            <div class="col-md-12 col-xl-4 me-5 mb-md-4 mb-sm-4 mb-xl-0">
+
+              <select class="form-select form-select-lg" name="count">
+                <option selected>1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+
+            </div>
+            <input type="button" class="ms-xl-0 ms-sm-5 ms-md-4 col-3 col-md-3 me-4 col-xl-2 fs-6 btn btn-outline-warning" value="加到購物車">
+            <input type="button" class="col-3 col-md-3 me-4 col-xl-2 fs-6 btn btn-warning" value="直接購買">
+            <input type="button" class="col-3 col-md-3 me-4 col-xl-2 fs-6 btn btn-warning" value="加入追蹤">
+
+          </div>
+
+          <!-- #endregion select & button -->
+
+        </div>
+
+        <!-- #endregion product_content -->
+
+      </div>
+
+    </div>
+
+    <!-- #endregion top -->
+
+    <!-- #region middle -->
+
+    <div class="container">
+      <div class="row mb-5">
+
+        <div class="fs-5">
+          耶加雪菲咖啡豆 Yirgacheffe
+          <br>
+          商品規格：227g±2g
+          <br>
+          製造地：台灣
+          <br>
+          保存期限：8個月，製造日期如包裝標示
+          <br>
+          儲存方法：咖啡豆均屬新鮮烘焙，因此我們建議的最佳賞味期為開封後的一個月內，並請保存於陰涼處為佳；保存容器以單向排氣咖啡袋、儲豆罐或其它具單向排氣功能之容器為宜
+          <br>
+          咖啡因含量：每10g含45±5mg（咖啡豆屬天然農產品，會因季節、產地及沖泡時間而影響咖啡因含量）
+          <br>
+          出貨須知：接獲訂單後為您新鮮現烘，預定寄出日為5~7工作天。<ins
+            class="text-danger fw-bold">每週四固定烘豆，若您於週二前(含)訂購，可於當週五安排出貨(遇國定假日則順延出貨)，請買家耐心等候。</ins>
+          <br>
+          退貨須知：當您在收到商品後，發現訂購商品不符或運送過程中損壞，請立即通知我們為您處理。鑑賞期內請保持原商品完整性，商品一經使用恕不接受退貨
+          <br>
+          <ins class="text-danger fw-bold">咖啡豆袋為經典版及亮點版隨機出貨</ins>
+          <br>
+          <br>
+          <div class="fs-3">好咖推薦</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- #endregion middle -->
+
+    <!-- #region bottom -->
+
+    <div class="container">
+      <div class="row mb-5">
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <a class="text-decoration-none text-dark" href="#">
+            <img class="w-100" src="./images/cama2_product.jpeg" alt="花香耶加雪菲咖啡豆 Floral Yirgacheffe">
+            <div class="mt-2">花香耶加雪菲咖啡豆 Floral Yirgacheffe</div>
+            <div class="d-flex mt-2">
+              <del class="me-4">TWD&nbsp;&nbsp;440</del>
+              <div>優惠320</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <a class="text-decoration-none text-dark" href="#">
+            <img class="w-100" src="./images/cama3_product.jpeg" alt="耶加雪菲咖啡豆Yirgacheffe">
+            <div class="mt-2">耶加雪菲咖啡豆Yirgacheffe</div>
+            <div class="d-flex mt-2">
+              <del class="me-4">TWD&nbsp;&nbsp;350</del>
+              <div>優惠225</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <a class="text-decoration-none text-dark" href="#">
+            <img class="w-100" src="./images/cama4_product.jpeg" alt="鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts">
+            <div class="overflow mt-2">鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts</div>
+            <div class="d-flex mt-2">
+              <del class="me-4">TWD&nbsp;&nbsp;650</del>
+              <div>優惠560</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-3">
+          <a class="text-decoration-none text-dark" href="#">
+            <img class="w-100" src="./images/cama5_product.jpeg" alt="酒香胡桃">
+            <div class="mt-2">酒香胡桃</div>
+            <div class="d-flex mt-2">
+              <del class="me-4">TWD&nbsp;&nbsp;250</del>
+              <div>優惠115</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- #endregion bottom -->
+
+    </div>
+
+  </main>
+
+  <!-- #region TOP & 線上購票 -->
+  <a class="position-fixed end-0 bottom-50 bg-secondary text-white fs-3 p-3 text-decoration-none rounded-strat z-index-999"
+    href="javascript:;"><i class="bi bi-ticket-perforated me-3"></i>線上購票</a>
+
+  <a class="position-fixed end-0 bottom-0 bg-dark text-white p-3 m-3 text-decoration-none rounded-circle"
+    href="#">TOP</a>
+  <!-- #endregion TOP & 線上購票 -->
+
+  <!-- #region footer -->
+  <footer class="footer mt-auto bg-light py-3 text-center">
+    此練習檔案不作為商業用途
+  </footer>
+  <!-- #endregion footer -->
+
+  <!-- #region modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title" id="Modal">登入會員</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="dashboard.html" class="needs-validation" novalidate>
+
+            <div class="row mb-5">
+              <div class="col-md-2 col-form-label">
+                <label for="account" class="form-label">帳號</label>
+              </div>
+              <div class="col-md-10">
+                <input type="text" id="account" name="account" class="form-control" required placeholder="請輸入帳號">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-md-2 col-form-label">
+                <label for="password" class="form-label">密碼</label>
+              </div>
+              <div class="col-md-10">
+                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
+                <div class="invalid-feedback">
+                  此為必填欄位
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex mb-5">
+              <div class="me-3">
+                <input type="checkbox">
+              </div>
+              <div>remember</div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+              <input class="btn btn-primary" type="submit" value="登入">
+              <p>
+                <a href="javascript;:" class="text-decoration-none">
+                  忘記密碼
+                </a>
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion modal -->
+
+  <!-- #region offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+        etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- #endregion offcanvas -->
+
+  <!-- #region bootStrap cdn javaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+  <!-- #endregion bootStrap cdn javaScript -->
+
+</body>
+
+</html>
