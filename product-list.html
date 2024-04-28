@@ -24,6 +24,41 @@
     .breadcrumb a:hover {
       color: black;
     }
+
+    del {
+      color: rgb(153, 153, 153);
+    }
+
+    .button {
+      width: 216px;
+      height: 40px;
+      cursor: pointer;
+    }
+
+    .button1 {
+      width: 50%;
+      height: 100%;
+      color: #ffc107;
+    }
+
+    .button2 {
+      width: 50%;
+      height: 100%;
+      background-color: #ffc107;
+    }
+
+    .button1:hover {
+      background-color: #ffc107;
+      color: white;
+    }
+
+    .button2:hover {
+      background-color: #f1b708;
+    }
+
+    .bi-heart {
+      color: #f1b708;
+    }
   </style>
 
 </head>
@@ -36,7 +71,8 @@
 
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png" alt="cama"></a>
+        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png"
+            alt="cama"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -47,15 +83,18 @@
               <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
             </li>
             <li class="nav-item ms-5">
-              <a class="nav-link text-dark" href="product-list.html">周邊商品</a>
+              <a class="nav-link text-dark" href="product-list.html">線上購物</a>
             </li>
             <li class="nav-item dropdown ms-5">
               <a class="nav-link dropdown-toggle text-dark" href="javascript:;" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                sealook探索
+                門市資訊
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-dark" href="sealook-list.html">音樂祭</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">全部門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">經典門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">亮點門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">旗艦門市</a></li>
               </ul>
             </li>
             <li class="nav-item ms-5">
@@ -96,10 +135,7 @@
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mt-3">
                 <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">首頁</a></li>
-                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">線上購物</a></li>
-                <li class="breadcrumb-item" aria-current="page"><a href="#" class="text-decoration-none">淺焙</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">耶加雪菲咖啡豆 Yirgacheffe</li>
+                <li class="breadcrumb-item active" aria-current="page">線上購物</li>
               </ol>
             </nav>
           </div>
@@ -112,63 +148,298 @@
     <!-- #region content -->
 
     <div class="container mb-5">
-      <div class="text-center mb-5">
+
+      <div class="row text-center mb-5">
         <h2>
-          周邊商品
+          線上購物
         </h2>
       </div>
+
       <div class="row">
-        <div class="col-md-3">側邊欄</div>
-        <div class="col-md-9">右邊主要內容
-          <div class="row">
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
+
+        <div class="col-3">
+
+          <!-- #region sidebar -->
+
+          <div class="d-flex justify-content-center">
+
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <button class="mb-3 text-start w-100 nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                aria-selected="true">淺焙<br>Light Roast</button>
+
+              <button class="mb-3 text-start w-100 nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                aria-selected="false">中焙<br>Medium Roast</button>
+
+              <button class="mb-3 text-start w-100 nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+                aria-selected="false">中深焙<br>Medium Dark Roast</button>
+
+              <button class="text-start w-100 nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+                aria-selected="false">深焙<br>Dark Roast</button>
+
             </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
-            <div class="col-6 col-3">
-              <a href="product.html"><img src="./images/sealook.png" alt="" class="w-100 rounded-circle"></a>
-              <p class="text-center"><a href="">商品名稱</a></p>
-            </div>
+
           </div>
+
+          <!-- #endregion sidebar -->
+
         </div>
+
+        <div class="col-9">
+
+          <div class="tab-content" id="v-pills-tabContent">
+
+            <!-- #region search -->
+
+            <div class="mb-4 pb-4 border-bottom row d-flex justify-content-end">
+
+              <div class="col-md-12 col-xl-4 mb-md-4 mb-sm-4">
+
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="輸入商品關鍵字" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn text-white bg-warning" type="button" id="button-addon2">搜尋</button>
+                </div>
+
+              </div>
+
+              <div class="col-md-12 col-xl-4">
+
+                <select class="form-select" aria-label="Default select example">
+                  <option Disabled selected class="text-center">---預設推薦---</option>
+                  <option value="1">價格:低到高</option>
+                  <option value="2">價格:高到低</option>
+                </select>
+
+              </div>
+
+            </div>
+
+            <!-- #endregion search -->
+
+            <!-- #region carousel -->
+
+            <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/carousel_1.jpg" class="d-block w-100" alt="cama">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/carousel_2.jpg" class="d-block w-100" alt="cama">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- #endregion carousel -->
+
+            <!-- #region 周邊商品 -->
+
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+              <div class="d-flex flex-wrap">
+
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama1_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">果樹女神咖啡豆<br>Pomona</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;390</del>
+                    <div class="me-4">優惠390</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama2_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">花香耶加雪菲咖啡豆<br>Floral Yirgacheffe</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;440</del>
+                    <div class="me-4">優惠440</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama3_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">耶加雪菲咖啡豆<br>Yirgacheffe</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;350</del>
+                    <div class="me-4">優惠350</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+              <div class="d-flex flex-wrap">
+
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama6_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">巧克力王子咖啡豆<br>Chocolate Prince</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;390</del>
+                    <div class="me-4">優惠390</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama7_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">百蜜花園咖啡豆<br>Sweet Blossom</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;430</del>
+                    <div class="me-4">優惠430</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+              <div class="d-flex flex-wrap">
+
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama8_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">義式咖啡豆<br>House Blend</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;320</del>
+                    <div class="me-4">優惠320</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+              <div class="d-flex flex-wrap">
+
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama9_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">黃金曼特寧咖啡豆<br>Golden Mandheling</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;490</del>
+                    <div class="me-4">優惠490</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 col-md-6 col-xl-3 d-flex flex-column align-items-center">
+                  <a class="link-dark text-decoration-none" href="product.html">
+                    <img class="w-75 mx-auto d-block" src="./images/cama10_product.jpeg" alt="cama">
+                    <p class="pt-2 text-center">曼巴咖啡豆<br>Mandheling & Brazil Blend</p>
+                  </a>
+                  <div class="d-flex justify-content-center">
+                    <del class="me-3">TWD&nbsp;&nbsp;350</del>
+                    <div class="me-4">優惠350</div>
+                    <a href="javascript:;"><i class="bi bi-heart"></i></a>
+                  </div>
+                  <div
+                    class="button d-flex justify-content-center border rounded-3 border-warning align-items-center mt-3">
+                    <div class="button1 d-flex justify-content-center align-items-center fw-bolder">加入購物車</div>
+                    <div class="button2 d-flex justify-content-center align-items-center text-white fw-bolder">直接購買
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- #endregion 周邊商品 -->
+
+          </div>
+
+        </div>
+
       </div>
+
+    </div>
     </div>
 
     <!-- #endregion content -->
 
   </main>
 
-  <!-- #region TOP & 線上購票 -->
-  <a class="position-fixed end-0 bottom-50 bg-secondary text-white fs-3 p-3 text-decoration-none rounded-strat z-index-999"
-    href="javascript:;"><i class="bi bi-ticket-perforated me-3"></i>線上購票</a>
-
-  <a class="position-fixed end-0 bottom-0 bg-dark text-white p-3 m-3 text-decoration-none rounded-circle"
-    href="#">TOP</a>
-  <!-- #endregion TOP & 線上購票 -->
+  <!-- #region TOP -->
+  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none"
+    href="#">
+    <i class="bi bi-chevron-compact-up text-dark fs-2"></i>
+  </a>
+  <!-- #endregion TOP -->
 
   <!-- #region footer -->
   <footer class="footer mt-auto bg-light py-3 text-center">
@@ -185,7 +456,6 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
           <form action="dashboard.html" class="needs-validation" novalidate>
 
             <div class="row mb-3">
@@ -205,7 +475,8 @@
                 <label for="password" class="form-label">密碼</label>
               </div>
               <div class="col-md-10">
-                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
+                <input type="password" id="password" name="password" class="form-control" required
+                  placeholder="請輸入密碼">
                 <div class="invalid-feedback">
                   此為必填欄位
                 </div>
@@ -214,9 +485,9 @@
 
             <div class="d-flex mb-3">
               <div class="me-3">
-                <input type="checkbox">
+                <input id="rem" type="checkbox">
               </div>
-              <div>remember</div>
+              <label for="rem">remember</label>
             </div>
 
             <div class="d-flex justify-content-between">

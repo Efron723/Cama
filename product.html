@@ -42,12 +42,6 @@
     del {
       color: rgb(153, 153, 153);
     }
-
-    .overflow {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
   </style>
 
 </head>
@@ -72,15 +66,18 @@
               <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
             </li>
             <li class="nav-item ms-5">
-              <a class="nav-link text-dark" href="product-list.html">周邊商品</a>
+              <a class="nav-link text-dark" href="product-list.html">線上購物</a>
             </li>
             <li class="nav-item dropdown ms-5">
               <a class="nav-link dropdown-toggle text-dark" href="javascript:;" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                sealook探索
+                門市資訊
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-dark" href="sealook-list.html">音樂祭</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">全部門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">經典門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">亮點門市</a></li>
+                <li><a class="dropdown-item text-dark" href="cama-list.html">旗艦門市</a></li>
               </ul>
             </li>
             <li class="nav-item ms-5">
@@ -282,8 +279,8 @@
         <div class="col-12 col-md-6 col-xl-3">
           <a class="text-decoration-none text-dark" href="#">
             <img class="w-100" src="./images/cama2_product.jpeg" alt="花香耶加雪菲咖啡豆 Floral Yirgacheffe">
-            <div class="mt-2">花香耶加雪菲咖啡豆 Floral Yirgacheffe</div>
-            <div class="d-flex mt-2">
+            <div class="pt-2">花香耶加雪菲咖啡豆 Floral Yirgacheffe</div>
+            <div class="d-flex pt-2">
               <del class="me-4">TWD&nbsp;&nbsp;440</del>
               <div>優惠320</div>
             </div>
@@ -293,8 +290,8 @@
         <div class="col-12 col-md-6 col-xl-3">
           <a class="text-decoration-none text-dark" href="#">
             <img class="w-100" src="./images/cama3_product.jpeg" alt="耶加雪菲咖啡豆Yirgacheffe">
-            <div class="mt-2">耶加雪菲咖啡豆Yirgacheffe</div>
-            <div class="d-flex mt-2">
+            <div class="pt-2">耶加雪菲咖啡豆Yirgacheffe</div>
+            <div class="d-flex pt-2">
               <del class="me-4">TWD&nbsp;&nbsp;350</del>
               <div>優惠225</div>
             </div>
@@ -304,8 +301,8 @@
         <div class="col-12 col-md-6 col-xl-3">
           <a class="text-decoration-none text-dark" href="#">
             <img class="w-100" src="./images/cama4_product.jpeg" alt="鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts">
-            <div class="overflow mt-2">鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts</div>
-            <div class="d-flex mt-2">
+            <div class="overflow pt-2 text-truncate">鎖香煎焙咖啡豆-中焙 香純堅果 Roasted Walnuts</div>
+            <div class="d-flex pt-2">
               <del class="me-4">TWD&nbsp;&nbsp;650</del>
               <div>優惠560</div>
             </div>
@@ -315,8 +312,8 @@
         <div class="col-12 col-md-6 col-xl-3">
           <a class="text-decoration-none text-dark" href="#">
             <img class="w-100" src="./images/cama5_product.jpeg" alt="酒香胡桃">
-            <div class="mt-2">酒香胡桃</div>
-            <div class="d-flex mt-2">
+            <div class="pt-2">酒香胡桃</div>
+            <div class="d-flex pt-2">
               <del class="me-4">TWD&nbsp;&nbsp;250</del>
               <div>優惠115</div>
             </div>
@@ -332,13 +329,12 @@
 
   </main>
 
-  <!-- #region TOP & 線上購票 -->
-  <a class="position-fixed end-0 bottom-50 bg-secondary text-white fs-3 p-3 text-decoration-none rounded-strat z-index-999"
-    href="javascript:;"><i class="bi bi-ticket-perforated me-3"></i>線上購票</a>
-
-  <a class="position-fixed end-0 bottom-0 bg-dark text-white p-3 m-3 text-decoration-none rounded-circle"
-    href="#">TOP</a>
-  <!-- #endregion TOP & 線上購票 -->
+  <!-- #region TOP -->
+  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none"
+    href="#">
+    <i class="bi bi-chevron-compact-up text-dark fs-2"></i>
+  </a>
+  <!-- #endregion TOP -->
 
   <!-- #region footer -->
   <footer class="footer mt-auto bg-light py-3 text-center">
@@ -355,9 +351,10 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+
           <form action="dashboard.html" class="needs-validation" novalidate>
 
-            <div class="row mb-5">
+            <div class="row mb-3">
               <div class="col-md-2 col-form-label">
                 <label for="account" class="form-label">帳號</label>
               </div>
@@ -369,35 +366,39 @@
               </div>
             </div>
 
-            <div class="row mb-5">
+            <div class="row mb-3">
               <div class="col-md-2 col-form-label">
                 <label for="password" class="form-label">密碼</label>
               </div>
               <div class="col-md-10">
-                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
+                <input type="password" id="password" name="password" class="form-control" required
+                  placeholder="請輸入密碼">
                 <div class="invalid-feedback">
                   此為必填欄位
                 </div>
               </div>
             </div>
 
-            <div class="d-flex mb-5">
+            <div class="d-flex mb-3">
               <div class="me-3">
-                <input type="checkbox">
+                <input id="rem" type="checkbox">
               </div>
-              <div>remember</div>
+              <label for="rem">remember</label>
             </div>
 
             <div class="d-flex justify-content-between">
-              <input class="btn btn-primary" type="submit" value="登入">
-              <p>
+              <div>
+                <input class="btn btn-primary" type="submit" value="登入">
+              </div>
+              <div class="d-flex align-items-center">
                 <a href="javascript;:" class="text-decoration-none">
                   忘記密碼
                 </a>
-              </p>
+              </div>
             </div>
 
           </form>
+
         </div>
       </div>
     </div>
