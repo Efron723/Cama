@@ -38,17 +38,17 @@
 
     <!-- #region navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png"
-            alt="cama"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html">
+          <img width="200" height="60" src="./images/cama_logo.png" alt="cama">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
-            <li class="nav-item">
+          <ul class="navbar-nav mx-auto mb-lg-0 fs-4">
+            <li class="nav-item ms-5 ms-xl-0">
               <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
             </li>
             <li class="nav-item ms-5">
@@ -73,10 +73,7 @@
               <a class="nav-link text-dark" href="contact.html">聯絡我們</a>
             </li>
           </ul>
-
-          <!-- .d-flex>a.fs-2+a.fs-2.position-relative.me-5>span.fs-6.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger>span.visually-hidden -->
-
-          <div class="d-flex">
+          <form class="d-flex ms-5 mt-4 mt-xl-0">
             <a href="javascript:;" class="fs-2 me-3" data-bs-toggle="modal" data-bs-target="#Modal">
               <i class="bi bi-person-fill text-dark"></i>
             </a>
@@ -87,8 +84,7 @@
                 <span class="visually-hidden">unread messages</span>
               </span>
             </a>
-          </div>
-
+          </form>
         </div>
       </div>
     </nav>
@@ -337,25 +333,55 @@
   <!-- #region offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <h5 class="text-warning fw-bolder ms-3 fs-2 offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-        etc.
+    <div class="d-flex flex-column align-items-center offcanvas-body">
+
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama1_product.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="text-center">果樹女神咖啡豆<br>Pomona</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;5</p>
+            <p>價錢&nbsp;:&nbsp;1950</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
       </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-          data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama2_product.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="text-center card-text">花香耶加雪菲咖啡豆<br>Floral Yirgacheffe</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;2</p>
+            <p>價錢&nbsp;:&nbsp;880</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
       </div>
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama3_product.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="text-center card-text">耶加雪菲咖啡豆<br>Yirgacheffe</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;4</p>
+            <p>價錢&nbsp;:&nbsp;1400</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
   <!-- #endregion offcanvas -->

@@ -12,8 +12,8 @@
 
   <link rel="stylesheet" href="./CSS/style.css">
 
-<style>
-      .navbar {
+  <style>
+    .navbar {
       border-bottom: 2px solid rgb(204, 204, 204);
     }
 
@@ -24,7 +24,36 @@
     .breadcrumb a:hover {
       color: black;
     }
-</style>
+
+    .tabletext {
+      color: rgb(151, 151, 151);
+    }
+
+    tbody tr {
+      cursor: pointer;
+    }
+
+    .more {
+      cursor: pointer;
+    }
+
+    .more:hover {
+      color: #ffc107;
+    }
+
+    .banner {
+      cursor: pointer;
+    }
+
+    .banner:hover .mask {
+      display: block;
+    }
+
+    .mask {
+      background-color: rgba(0, 0, 0, 0.377);
+      display: none;
+    }
+  </style>
 
 </head>
 
@@ -34,17 +63,18 @@
 
     <!-- #region navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img width="200" height="60" src="./images/cama_logo.png"
-            alt="cama"></a>
+        <a class="navbar-brand" href="index.html">
+          <img width="200" height="60" src="./images/cama_logo.png" alt="cama">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fs-4">
-            <li class="nav-item">
+          <ul class="navbar-nav mx-auto mb-lg-0 fs-4">
+            <li class="nav-item ms-5 ms-xl-0">
               <a class="nav-link text-dark" aria-current="page" href="news.html">新訊</a>
             </li>
             <li class="nav-item ms-5">
@@ -69,10 +99,7 @@
               <a class="nav-link text-dark" href="contact.html">聯絡我們</a>
             </li>
           </ul>
-
-          <!-- .d-flex>a.fs-2+a.fs-2.position-relative.me-5>span.fs-6.position-absolute.top-0.start-100.translate-middle.badge.rounded-pill.bg-danger>span.visually-hidden -->
-
-          <div class="d-flex">
+          <form class="d-flex ms-5 mt-4 mt-xl-0">
             <a href="javascript:;" class="fs-2 me-3" data-bs-toggle="modal" data-bs-target="#Modal">
               <i class="bi bi-person-fill text-dark"></i>
             </a>
@@ -83,8 +110,7 @@
                 <span class="visually-hidden">unread messages</span>
               </span>
             </a>
-          </div>
-
+          </form>
         </div>
       </div>
     </nav>
@@ -101,22 +127,26 @@
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/sealook1.jpg" class="d-block w-100" alt="...">
+          <img src="./images/carousel_3.jpg" class="d-block w-100" alt="caba">
         </div>
         <div class="carousel-item">
-          <img src="./images/sealook2.jpg" class="d-block w-100" alt="...">
+          <img src="./images/carousel_4.jpg" class="d-block w-100" alt="caba">
         </div>
         <div class="carousel-item">
-          <img src="./images/sealook3.jpg" class="d-block w-100" alt="...">
+          <img src="./images/carousel_5.jpg" class="d-block w-100" alt="caba">
         </div>
         <div class="carousel-item">
-          <img src="./images/sealook4.jpg" class="d-block w-100" alt="...">
+          <img src="./images/carousel_6.jpg" class="d-block w-100" alt="caba">
         </div>
         <div class="carousel-item">
-          <img src="./images/sealook5.jpg" class="d-block w-100" alt="...">
+          <img src="./images/carousel_7.jpg" class="d-block w-100" alt="caba">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/carousel_8.jpg" class="d-block w-100" alt="caba">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -131,183 +161,204 @@
 
     <!-- #endregion carousel -->
 
-    <!-- #region first -->
-
-    <!-- .container>.row>h2.col-12.text-center{SEALOOK}.mb-5+.col-12.col-md-6.col-xl-3.mb-3*8>div.position-relative>img.w-100.rounded-circle[src="./images/sealook.png"]+div.position-absolute.start-0.top-0.p-2.fs-2{icon}^p{sealook} -->
-
+    <!-- #region table -->
 
     <div class="container">
+
       <div class="row">
-        <h2 class="col-12 text-center mb-5">SEALOOK</h2>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <a class="position-absolute start-0 top-0 p-2 fs-2"
-              href="https://www.youtube.com/embed/E4JdqgVmC4E?si=Q7vqtgiDFXMd-p8S"><i class="bi bi-youtube"></i></a>
-            <div class="position-absolute end-0 top-0 p-2 fs-2"><i class="bi bi-badge-8k"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-emoji-heart-eyes"></i></div>
-            <div class="position-absolute end-0 top-0 p-2 fs-2"><i class="bi bi-emoji-sunglasses"></i></div>
-            <div class="position-absolute start-0 bottom-0 p-2 fs-2"><i class="bi bi-emoji-kiss"></i></div>
-            <div class="position-absolute end-0 bottom-0 p-2 fs-2"><i class="bi bi-emoji-wink"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-calendar-heart"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cart-plus"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cloud-download"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-cloud-drizzle"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-clipboard2-heart"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="position-relative">
-            <img src="./images/sealook.png" alt="" class="w-100 rounded-circle">
-            <div class="position-absolute start-0 top-0 p-2 fs-2"><i class="bi bi-chat-heart"></i></div>
-          </div>
-          <p>sealook</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- #endregion first -->
+        <!-- #region think fresh! -->
 
-    <!-- #region second -->
-
-    <div class="py-5">
-      <div class="container">
-        <div class="row pt-3 pb-3">
-          <div class="col-12 text-center">
-            <h2>AAAA1</h2>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 mb-5">
-            <div class="bg-info p-2 rounded-circle">
-              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
-              <p class="text-center">Monkey1</p>
-              </img>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 mb-5">
-            <div class="bg-info p-2 rounded-circle">
-              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
-              <p class="text-center">Monkey2</p>
-              </img>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 mb-5">
-            <div class="bg-info p-2 rounded-circle">
-              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
-              <p class="text-center">Monkey3</p>
-              </img>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-xl-3 mb-5">
-            <div class="bg-info p-2 rounded-circle">
-              <img class="w-100 rounded-circle" src="./images/sealook.png" alt="">
-              <p class="text-center">Monkey4</p>
-              </img>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- #endregion second -->
-
-    <!-- #region third -->
-
-    <div class="py-5">
-      <div class="container">
         <div class="row">
-          <div class="col-12 text-center">
-            <h2>BBBB1</h2>
-          </div>
-          <div class="col-md-12 col-xl-6 mg-5">
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/E4JdqgVmC4E?si=Q7vqtgiDFXMd-p8S"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p class="text-center">影片1</p>
-          </div>
-          <div class="col-md-12 col-xl-6 mg-5">
-            <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/U1ggPrTaSD4?si=jAIfbPRZ8x62lxwl"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p class="text-center">影片2</p>
-          </div>
+
+          <h2 class="col-12 text-center mb-5 mt-4 fw-bolder">Think&nbsp;Fresh&nbsp;!</h2>
+
         </div>
+
+        <!-- #endregion think fresh! -->
+
+        <!-- #region table -->
+
+        <div class="row mb-5">
+
+          <div class="d-flex justify-content-between align-items-center">
+
+            <div class="fs-5 fw-bolder">最新消息</div>
+            <div class="tabletext more">More&nbsp;<i class="bi bi-chevron-right"></i></div>
+
+          </div>
+
+          <table class="table table-hover" style="height: 400px;">
+            <tbody>
+              <tr class="align-middle">
+                <td class="tabletext">2024/04/17</td>
+                <td class="tabletext">最新活動</td>
+                <td>
+                  cama x 台灣 Pay 消費回饋活動
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td class="tabletext">2024/04/14</td>
+                <td class="tabletext">最新活動</td>
+                <td>
+                  新檔期【手沖精品季】☕
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td class="tabletext">2024/03/20</td>
+                <td class="tabletext">最新活動</td>
+                <td>
+                  全台cama門市【新加入會員活動】🎉
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td class="tabletext">2024/03/18</td>
+                <td class="tabletext">最新活動</td>
+                <td>
+                  🆕【會員點數優惠券更新】🆕
+                </td>
+              </tr>
+              <tr class="align-middle">
+                <td class="tabletext">2024/03/15</td>
+                <td class="tabletext">最新活動</td>
+                <td>
+                  cama攜手蝦皮購物【Women的事美你的事】
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <!-- #endregion table -->
+
       </div>
+
     </div>
 
-    <!-- #endregion third -->
+    <!-- #endregion table -->
 
-    <!-- #region fourth -->
+    <!-- #region 店內飲品 & 商品介紹 -->
 
-    <div class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-          <div class="col-12 col-md-4 col-xl-2 mb-5 text-center"><a href=""><img src="./images/sealook.png" alt=""
-                class="w-50 rounded-circle"></a></div>
-        </div>
+    <div class="row mb-5 mx-xl-5 px-md-3 px-sm-3 px-xl-0">
+
+      <div class="col-12 col-md-6 col-xl-6 px-md-1 px-xl-3 py-3">
+        <a href="javascript:;">
+          <img style="width: 5000px;" class="img-fluid" src="./images/coffee.png" alt="cama">
+        </a>
+        <div class="text-center mt-3 fs-5">店內飲品</div>
       </div>
+
+      <div class="col-12 col-md-6 col-xl-6 px-md-1 px-xl-3 py-3">
+        <a href="javascript:;">
+          <img style="width: 5000px;" class="img-fluid" src="./images/coffee2.png" alt="cama">
+        </a>
+        <div class="text-center mt-3 fs-5">商品介紹</div>
+      </div>
+
     </div>
 
-    <!-- #endregion fourth -->
+    <!-- #endregion 店內飲品 & 商品介紹 -->
+
+    <!-- #region banner -->
+
+    <div class="row mb-5">
+
+      <!-- #region left -->
+
+      <div class="d-flex flex-wrap w-50">
+
+        <div class="banner position-relative border-white w-100 card text-white" style="height: auto;">
+          <img src="./images/banner1.jpg" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">新檔期【手沖精品季】☕</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+          <img src="./images/banner2.png" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">店內飲品</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+          <img src="./images/banner3.png" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">加盟專區</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- #endregion left -->
+
+      <!-- #region right -->
+
+      <div class="d-flex flex-wrap w-50">
+
+        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+          <img src="./images/banner4.png" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">門市資訊</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+          <img src="./images/banner5.png" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">關於cama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner border-white w-100 card text-white" style="height: auto;">
+          <img src="./images/banner6.png" class="card-img" alt="...">
+          <div class="mask position-absolute bottom-0 w-100 h-100">
+            <div class="card-img-overlay d-flex align-items-end p-4">
+              <p class="card-text fw-bolder">商品介紹</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- #endregion right -->
+
+    </div>
+
+    <!-- #endregion banner -->
+
+    <!-- #region youtube -->
+
+        <div class="row px-5 mb-5">
+          <div class="mb-md-4 mb-sm-4 col-md-12 col-xl-6">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xp-m--R1dP8?si=mmrYS2JTJrGyR4bm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class=" col-md-12 col-xl-6">
+            <div class="ratio ratio-16x9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/gmE4Exib_0M?si=gTL5KLX5h3GLaRcq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+    <!-- #endregion youtube -->
 
   </main>
 
   <!-- #region TOP -->
-  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none"
-    href="#">
+  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none" href="#">
     <i class="bi bi-chevron-compact-up text-dark fs-2"></i>
   </a>
   <!-- #endregion TOP -->
@@ -347,8 +398,7 @@
                 <label for="password" class="form-label">密碼</label>
               </div>
               <div class="col-md-10">
-                <input type="password" id="password" name="password" class="form-control" required
-                  placeholder="請輸入密碼">
+                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
                 <div class="invalid-feedback">
                   此為必填欄位
                 </div>
@@ -384,25 +434,55 @@
   <!-- #region offcanvas -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <h5 class="text-warning fw-bolder ms-3 fs-2 offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-        etc.
+    <div class="d-flex flex-column align-items-center offcanvas-body">
+
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama1_product.jpeg" class="card-img-top" alt="caba">
+        <div class="card-body">
+          <h5 class="text-center">果樹女神咖啡豆<br>Pomona</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;5</p>
+            <p>價錢&nbsp;:&nbsp;1950</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
       </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-          data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama2_product.jpeg" class="card-img-top" alt="caba">
+        <div class="card-body">
+          <h5 class="text-center card-text">花香耶加雪菲咖啡豆<br>Floral Yirgacheffe</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;2</p>
+            <p>價錢&nbsp;:&nbsp;880</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
       </div>
+      <div class="mb-4 card border-warning" style="width: 18rem; height: 29rem;">
+        <img src="./images/cama3_product.jpeg" class="card-img-top" alt="caba">
+        <div class="card-body">
+          <h5 class="text-center card-text">耶加雪菲咖啡豆<br>Yirgacheffe</h5>
+          <div class="card-text d-flex justify-content-around">
+            <p>數量&nbsp;:&nbsp;4</p>
+            <p>價錢&nbsp;:&nbsp;1400</p>
+          </div>
+          <div class="card-text d-flex justify-content-around">
+            <a href="product.html" type="button" class="w-100 me-4 btn btn-outline-warning">編輯</a>
+            <a href="javascript:;" type="button" class="w-100 btn btn-warning">結帳</a>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
   <!-- #endregion offcanvas -->
