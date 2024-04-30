@@ -13,10 +13,6 @@
   <link rel="stylesheet" href="./CSS/style.css">
 
   <style>
-    body {
-      overflow-x: hidden;
-    }
-
     .navbar {
       border-bottom: 2px solid rgb(204, 204, 204);
     }
@@ -59,16 +55,11 @@
     }
 
     .scale {
-      overflow: hidden;
-      cursor: pointer;
+      transition: 0.3s linear all;
     }
 
-    .scale img {
-      transition: 0.5s linear all;
-    }
-
-    .scale:hover img {
-      transform: scale(1.05);
+    .scale:hover {
+      transform: scale(1.02);
     }
 
     .foot:hover {
@@ -79,7 +70,17 @@
       color: rgb(148, 148, 148);
     }
 
-    .link:hover {
+    .bi-facebook:hover {
+      color: #0d6efd;
+      cursor: pointer;
+    }
+
+    .bi-line:hover {
+      color: #198754;
+      cursor: pointer;
+    }
+
+    .bi-instagram:hover {
       color: #ffc107;
       cursor: pointer;
     }
@@ -98,8 +99,7 @@
         <a class="navbar-brand" href="index.html">
           <img width="200" height="60" src="./images/cama_logo.png" alt="cama">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -270,99 +270,120 @@
 
     <!-- #region 店內飲品 & 商品介紹 -->
 
-    <div class="row mb-5 mx-xl-5 px-md-3 px-sm-3 px-xl-0">
+    <div class="container-fluid">
 
-      <div class="col-12 col-md-6 col-xl-6 px-md-1 px-xl-3 py-3">
-        <div class="scale rounded-pill">
-          <img style="width: 5000px;" class="img-fluid" src="./images/coffee.png" alt="cama">
-        </div>
-        <div class="text-center mt-3 fs-5">店內飲品</div>
-      </div>
+      <div class="row mb-5 px-5">
 
-      <div class="col-12 col-md-6 col-xl-6 px-md-1 px-xl-3 py-3">
-        <div class="scale rounded-pill">
-          <img style="width: 5000px;" class="img-fluid" src="./images/coffee2.png" alt="cama">
+        <div class="col-12 col-md-6">
+
+          <div class="card border-white">
+            <div class="overflow-hidden">
+              <a href=""><img src="./images/coffee.png" class="card-img-top scale" alt="..."></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="javascript:;" class="btn btn-warning">店內飲品</a>
+            </div>
+          </div>
+
         </div>
-        <div class="text-center mt-3 fs-5">商品介紹</div>
+
+        <div class="col-12 col-md-6">
+
+          <div class="card border-white">
+            <div class="overflow-hidden">
+              <a href=""><img src="./images/coffee2.png" class="card-img-top scale" alt="..."></a>
+            </div>
+            <div class="card-body text-center">
+              <a href="javascript:;" class="btn btn-warning">商品介紹</a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
+
 
     <!-- #endregion 店內飲品 & 商品介紹 -->
 
     <!-- #region banner -->
 
-    <div class="row mb-5">
+    <div class="container-fluid">
 
-      <!-- #region left -->
+      <div class="row mb-5">
 
-      <div class="d-flex flex-wrap w-50">
+        <!-- #region left -->
 
-        <div class="banner position-relative border-white w-100 card text-white" style="height: auto;">
-          <img src="./images/banner1.jpg" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">新檔期【手沖精品季】☕</p>
+        <div class="d-flex flex-wrap w-50">
+
+          <div class="banner position-relative border-white w-100 card text-white" style="height: auto;">
+            <img src="./images/banner1.jpg" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">新檔期【手沖精品季】☕</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
-          <img src="./images/banner2.png" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">店內飲品</p>
+          <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+            <img src="./images/banner2.png" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">店內飲品</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
-          <img src="./images/banner3.png" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">加盟專區</p>
+          <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+            <img src="./images/banner3.png" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">加盟專區</p>
+              </div>
             </div>
           </div>
+
         </div>
+
+        <!-- #endregion left -->
+
+        <!-- #region right -->
+
+        <div class="d-flex flex-wrap w-50">
+
+          <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+            <img src="./images/banner4.png" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">門市資訊</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
+            <img src="./images/banner5.png" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">關於cama</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="banner border-white w-100 card text-white" style="height: auto;">
+            <img src="./images/banner6.png" class="card-img" alt="...">
+            <div class="mask position-absolute bottom-0 w-100 h-100">
+              <div class="card-img-overlay d-flex align-items-end p-4">
+                <p class="card-text fw-bolder">商品介紹</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- #endregion right -->
 
       </div>
-
-      <!-- #endregion left -->
-
-      <!-- #region right -->
-
-      <div class="d-flex flex-wrap w-50">
-
-        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
-          <img src="./images/banner4.png" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">門市資訊</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="banner border-white w-50 card bg-dark text-white" style="height: auto;">
-          <img src="./images/banner5.png" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">關於cama</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="banner border-white w-100 card text-white" style="height: auto;">
-          <img src="./images/banner6.png" class="card-img" alt="...">
-          <div class="mask position-absolute bottom-0 w-100 h-100">
-            <div class="card-img-overlay d-flex align-items-end p-4">
-              <p class="card-text fw-bolder">商品介紹</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- #endregion right -->
 
     </div>
 
@@ -370,23 +391,27 @@
 
     <!-- #region youtube -->
 
-    <div class="row px-5 mb-5">
-      <div class="mb-md-4 mb-sm-4 col-md-12 col-xl-6">
-        <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/xp-m--R1dP8?si=mmrYS2JTJrGyR4bm"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container-fluid">
+
+      <div class="row px-5 mb-5">
+        <div class="mb-md-4 mb-sm-4 col-md-12 col-xl-6">
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xp-m--R1dP8?si=mmrYS2JTJrGyR4bm"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class=" col-md-12 col-xl-6">
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gmE4Exib_0M?si=gTL5KLX5h3GLaRcq"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-      <div class=" col-md-12 col-xl-6">
-        <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/gmE4Exib_0M?si=gTL5KLX5h3GLaRcq"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
+
     </div>
 
     <!-- #endregion youtube -->
@@ -505,9 +530,9 @@
 
             <div class="copy col-12 col-md-6 text-end">
 
-              <i class="link fs-3 me-4 bi bi-facebook"></i>
-              <i class="link fs-3 me-4 bi bi-line"></i>
-              <i class="link fs-3 me-4 bi bi-instagram"></i>
+              <i class="fs-3 me-4 bi bi-facebook"></i>
+              <i class="fs-3 me-4 bi bi-line"></i>
+              <i class="fs-3 me-4 bi bi-instagram"></i>
 
             </div>
 
@@ -569,7 +594,7 @@
 
             <div class="d-flex justify-content-between">
               <div>
-                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-warning" type="submit" value="登入">
               </div>
               <div class="d-flex align-items-center">
                 <a href="javascript;:" class="text-decoration-none">

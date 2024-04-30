@@ -28,6 +28,7 @@
     textarea {
       resize: none;
     }
+
     .foot:hover {
       color: #ffc107;
     }
@@ -36,7 +37,17 @@
       color: rgb(148, 148, 148);
     }
 
-    .link:hover {
+    .bi-facebook:hover {
+      color: #0d6efd;
+      cursor: pointer;
+    }
+
+    .bi-line:hover {
+      color: #198754;
+      cursor: pointer;
+    }
+
+    .bi-instagram:hover {
       color: #ffc107;
       cursor: pointer;
     }
@@ -55,7 +66,8 @@
         <a class="navbar-brand" href="index.html">
           <img width="200" height="60" src="./images/cama_logo.png" alt="cama">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -245,16 +257,26 @@
             <input class="btn btn-warning fs-6 text-white fw-bolder" type="submit" value="送出訊息">
           </div>
 
-          <div class="w-50 mb-3 text-center">
-            <i class="me-3 bi bi-geo-alt-fill"></i>台北市大安區安和路一段 27 號 18 樓
+          <div class="w-100 mb-5 d-flex align-items-center justify-content-evenly">
+
+            <div class="text-center">
+              <i class="me-3 text-warning bi bi-geo-alt-fill"></i>台北市大安區安和路一段&nbsp;27&nbsp;號&nbsp;18&nbsp;樓
+            </div>
+
+            <div class="text-center">
+              <i class="me-3 text-warning bi bi-telephone-fill"></i>(02)&nbsp;2775&nbsp;-&nbsp;3385
+            </div>
+
+            <div class="text-center">
+              <i class="me-3 text-warning bi bi-envelope-heart-fill"></i>service@camacafe.com
+            </div>
+
           </div>
 
-          <div class="w-50 mb-3 text-center">
-            <i class="me-3 bi bi-telephone-fill"></i>(02) 2775 - 3385
-          </div>
-
-          <div class="w-50 mb-5 text-center">
-            <i class="me-3 bi bi-envelope-heart-fill"></i>a123456789@camacafe.com
+          <div class="w-100 mb-5">
+              
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.8485449111863!2d121.54789207698076!3d25.03921343807847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abcf913891b1%3A0x7bc4a1ca061f4921!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5a6J5ZKM6Lev5LiA5q61MjfomZ8xOA!5e0!3m2!1szh-TW!2stw!4v1714465482462!5m2!1szh-TW!2stw" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
           </div>
 
         </form>
@@ -267,14 +289,13 @@
   </main>
 
   <!-- #region TOP -->
-  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none"
-    href="#">
+  <a class="position-fixed end-0 bottom-0 text-white p-3 mb-4 me-5 text-decoration-none" href="#">
     <i class="bi bi-chevron-compact-up text-dark fs-2"></i>
   </a>
   <!-- #endregion TOP -->
 
   <!-- #region footer -->
-  
+
   <footer class="footer mt-auto">
 
     <div class="bg-secondary">
@@ -379,9 +400,9 @@
 
             <div class="copy col-12 col-md-6 text-end">
 
-              <i class="link fs-3 me-4 bi bi-facebook"></i>
-              <i class="link fs-3 me-4 bi bi-line"></i>
-              <i class="link fs-3 me-4 bi bi-instagram"></i>
+              <i class="fs-3 me-4 bi bi-facebook"></i>
+              <i class="fs-3 me-4 bi bi-line"></i>
+              <i class="fs-3 me-4 bi bi-instagram"></i>
 
             </div>
 
@@ -394,7 +415,7 @@
       </div>
 
     </div>
-  
+
   </footer>
   <!-- #endregion footer -->
 
@@ -427,8 +448,7 @@
                 <label for="password" class="form-label">密碼</label>
               </div>
               <div class="col-md-10">
-                <input type="password" id="password" name="password" class="form-control" required
-                  placeholder="請輸入密碼">
+                <input type="password" id="password" name="password" class="form-control" required placeholder="請輸入密碼">
                 <div class="invalid-feedback">
                   此為必填欄位
                 </div>
@@ -444,7 +464,7 @@
 
             <div class="d-flex justify-content-between">
               <div>
-                <input class="btn btn-primary" type="submit" value="登入">
+                <input class="btn btn-warning" type="submit" value="登入">
               </div>
               <div class="d-flex align-items-center">
                 <a href="javascript;:" class="text-decoration-none">
